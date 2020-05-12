@@ -1,11 +1,12 @@
 * {
   margin: 0;
+  padding: 0;
 }
 .container {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 20vh 80vh;
+  grid-template-columns: 20vw 80vw;
   grid-template-rows: 20vh 70vh 10vh;
   grid-template-areas:
     "head head "
