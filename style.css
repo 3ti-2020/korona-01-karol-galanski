@@ -3,35 +3,71 @@
   padding: 0;
 }
 .container {
-  height: 100vh;
+  height: 300vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 20vw 80vw;
-  grid-template-rows: 20vh 70vh 10vh;
+  grid-template-columns: 15vw 85vw;
+  grid-template-rows: 15vh 275vh 10vh;
   grid-template-areas:
-    "head head "
+    "wpis head "
     "sidebar main"
     "sidebar ft";
 }
+.projekt{
+  grid-area: wpis;
+  background-color: #fffae2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .header {
   grid-area: head;
-  background-color: #f7ede2;
+  background-color: #eadda6;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .sidebar {
   grid-area: sidebar;
-  background-color: #f5cac3;
+  background-color: #fefcad;
+  display: flex;
+  justify-content: center;
 }
 .main {
   grid-area: main;
-  background-color: #f28482;
+  background-color: #e6e18f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .footer {
   grid-area: ft;
-  background-color: #84a59d;
+  background-color: #92977e;
+  text-align: center;
 }
-.imie {
-  color: #4281a4;
+.menu{
+  position: fixed;
+}
+.kafelki{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #92977e;
+  border-radius: 10px;
+  width: 150px;
+  height: 80px;
+  list-style-type: none;
+  margin: 20px;
+  font-size: 2rem;
+}
+.linki{
+  text-decoration: none;
+  color: black;
+}
+.cities{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
