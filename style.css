@@ -1,7 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Luminari;
+  font-style: normal;
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: 'Luminari';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Luminari'), url('Luminari-Regular.woff') format('woff');
+  }
 .container {
   height: 300vh;
   width: 100vw;
@@ -16,6 +26,9 @@
 .projekt{
   grid-area: wpis;
   background-color: #fffae2;
+  background-image: url(images/FOwvVZ.jpg);
+  box-shadow: inset 0px 0px 45px 2px rgba(0,0,0,1);
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,6 +37,10 @@
 .header {
   grid-area: head;
   background-color: #eadda6;
+  box-shadow: 5px 10px 20px black inset;
+  background-image: url(images/79530397_10156412266242364_6138893324217483264_o.jpg);
+  box-shadow: inset 0px 0px 45px 12px rgba(0,0,0,1);
+  background-size: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,12 +48,19 @@
 .sidebar {
   grid-area: sidebar;
   background-color: #fefcad;
+  background-image: url(images/MastroDaro1565553703.jpg);
+  background-position: 35%;
+  box-shadow: inset 0px 0px 45px 12px rgba(0,0,0,1);
+  background-size: cover;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .main {
   grid-area: main;
   background-color: #e6e18f;
+  box-shadow: inset 0px 0px 45px 12px rgba(0,0,0,1);
+  background-image: url(images/bg-main.PNG);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -44,27 +68,34 @@
 .footer {
   grid-area: ft;
   background-color: #92977e;
+  background-image: url(images/steamworkshop_webupload_previewfile_257622182_preview.jpg);
+  background-position: bottom;
+  color: white;
   text-align: center;
 }
 .menu{
   position: fixed;
+  top: 250px;
 }
 .kafelki{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #92977e;
-  border-radius: 10px;
+  background: grey;
+  opacity: 70%;
   width: 150px;
   height: 80px;
   list-style-type: none;
   margin: 20px;
   font-size: 2rem;
 }
+.kafelki:hover{
+  background: linear-gradient(to bottom, grey, black);
+}
 .linki{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .cities{
   display: flex;
