@@ -1,13 +1,13 @@
 var carlin = document.getElementById('carlin');
 
 carlin.onclick = function() {
-    var mySrc = carlin.getAttribute('src');
+    var mySrc = carlin.getAttribute('src'); // sprawdza jaka nazwa znajduje się w src i przypisuje ją do zmiennej mySrc
 
-    if(mySrc === 'images/map_carlin.jpg') {
-        carlin.setAttribute ('src','images/carlin-art.gif');
-        carlin.style.height="350px"
-        carlin.style.width="700px"
-        carlin.style.transition="all 300ms linear";
+    if(mySrc === 'images/map_carlin.jpg') { // jesli src jest równy map_carlin.jpg to: 
+        carlin.setAttribute ('src','images/carlin-art.gif'); // wkleja w atrybut src inny obrazek 
+        carlin.style.height="350px" // 
+        carlin.style.width="700px" // przypisuje mu dana wysokość i szerokość 
+        carlin.style.transition="all 300ms linear"; // smooth przejście między zmieniającymi się obrazkami 
     } else {
         carlin.setAttribute ('src','images/map_carlin.jpg');
         carlin.style.height="340px"
