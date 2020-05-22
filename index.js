@@ -1,9 +1,9 @@
 var carlin = document.getElementById('carlin');
 
-carlin.onclick = function() {
-    var mySrc = carlin.getAttribute('src'); // sprawdza jaka nazwa znajduje się w src i przypisuje ją do zmiennej mySrc
+carlin.addEventListener('click', function() {
+    var imageSrc = carlin.getAttribute('src'); // sprawdza jaka nazwa znajduje się w src i przypisuje ją do zmiennej imageSrc
 
-    if(mySrc === 'images/map_carlin.jpg') { // jesli src jest równy map_carlin.jpg to: 
+    if(imageSrc === 'images/map_carlin.jpg') { // jesli src jest równy map_carlin.jpg to: 
         carlin.setAttribute ('src','images/carlin-art.gif'); // wkleja w atrybut src inny obrazek 
         carlin.style.height="350px" // 
         carlin.style.width="700px" // przypisuje mu dana wysokość i szerokość 
@@ -14,14 +14,15 @@ carlin.onclick = function() {
         carlin.style.width="350px"
         carlin.style.transition="all 300ms linear";
     }
-}
+});
+
 
 var thais = document.getElementById('thais');
 
-thais.onclick = function() {
-    var mySrc = thais.getAttribute('src');
+thais.addEventListener('click', function() {
+    var imageSrc = thais.getAttribute('src'); 
 
-    if(mySrc === 'images/map_thais.jpg') {
+    if(imageSrc === 'images/map_thais.jpg') {
         thais.setAttribute ('src','images/thais-art.png');
         thais.style.height="350px"
         thais.style.width="700px"
@@ -32,14 +33,14 @@ thais.onclick = function() {
         thais.style.width="350px"
         thais.style.transition="all 300ms linear";
     }
-}
+});
 
 var venore = document.getElementById('venore');
 
-venore.onclick = function() {
-    var mySrc = venore.getAttribute('src');
+venore.addEventListener('click', function() {
+    var imageSrc = venore.getAttribute('src'); 
 
-    if(mySrc === 'images/map_venore.jpg') {
+    if(imageSrc === 'images/map_venore.jpg') {
         venore.setAttribute ('src','images/Venore_Swamp.jpg');
         venore.style.height="350px"
         venore.style.width="700px"
@@ -50,14 +51,14 @@ venore.onclick = function() {
         venore.style.width="350px"
         venore.style.transition="all 300ms linear";
     }
-}
+});
 
 var kazordoon = document.getElementById('kazordoon');
 
-kazordoon.onclick = function() {
-    var mySrc = kazordoon.getAttribute('src');
+kazordoon.addEventListener('click', function() {
+    var imageSrc = kazordoon.getAttribute('src'); 
 
-    if(mySrc === 'images/map_kazordoon.jpg') {
+    if(imageSrc === 'images/map_kazordoon.jpg') {
         kazordoon.setAttribute ('src','images/kazoodron-art.jpg');
         kazordoon.style.height="300px"
         kazordoon.style.width="400px"
@@ -68,14 +69,14 @@ kazordoon.onclick = function() {
         kazordoon.style.width="350px"
         kazordoon.style.transition="all 300ms linear";
     }
-}
+});
 
 var abdendriel = document.getElementById('abdendriel');
 
-abdendriel.onclick = function() {
-    var mySrc = abdendriel.getAttribute('src');
+abdendriel.addEventListener('click', function() {
+    var imageSrc = abdendriel.getAttribute('src'); 
 
-    if(mySrc === 'images/map_abdendriel.jpg') {
+    if(imageSrc === 'images/map_abdendriel.jpg') {
         abdendriel.setAttribute ('src','images/Abdendriel-art.png');
         abdendriel.style.height="350px"
         abdendriel.style.width="700px"
@@ -86,5 +87,5 @@ abdendriel.onclick = function() {
         abdendriel.style.width="350px"
         abdendriel.style.transition="all 300ms linear";
     }
-}
+});
 
